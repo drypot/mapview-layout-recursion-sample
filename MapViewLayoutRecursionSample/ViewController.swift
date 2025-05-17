@@ -12,16 +12,24 @@ class ViewController: NSViewController {
 
     let mapView = MKMapView()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addMapView()
+    }
+
+    override func viewWillAppear() {
+        super.viewWillAppear()
+    }
+
     override func viewDidAppear() {
         super.viewDidAppear()
-        addMapView()
     }
 
     func addMapView() {
         mapView.translatesAutoresizingMaskIntoConstraints = false
 
         print(view.bounds)
-//        mapView.frame = view.bounds
+        mapView.frame = view.bounds // comment out 하면 에러가 난다.
 
         view.addSubview(mapView)
 
