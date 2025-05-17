@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     let mapView = MKMapView()
 
     override func viewDidAppear() {
-        super.viewDidLoad()
+        super.viewDidAppear()
         addMapView()
     }
 
