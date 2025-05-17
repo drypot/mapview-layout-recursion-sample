@@ -10,7 +10,7 @@ MapView Layout Recursion 오류 샘플.
     This will be logged only once.
     This may break in the future.
 
-관련 코드는 MapViewController.swift 파일에 있다.
+관련 코드는 ViewController.swift 파일에 있다.
 
 breakpoint navigator 에 가면 심볼릭 브레이크 포인트가 하나 만들어져 있다.\
 disable 되어 있으니 enable 시키면 정지하는 것을 볼 수 있다.

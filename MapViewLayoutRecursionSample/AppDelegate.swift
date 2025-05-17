@@ -10,11 +10,10 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
-
+    var windowController = WindowController()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        windowController.showWindow(nil)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -24,7 +23,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
-
 
 }
 
